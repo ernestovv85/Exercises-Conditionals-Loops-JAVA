@@ -8,6 +8,8 @@ public class Main {
     //Exercises.exercise6();
     //Exercises.exercise7();
     //Exercises.exercise8();
-    Exercises.exercise9();
+    //Exercises.exercise9(9);
+    Exercises.exercise10(6);
+
   }
 }

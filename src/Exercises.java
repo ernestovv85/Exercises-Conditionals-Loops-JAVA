@@ -122,20 +122,22 @@ public class Exercises {
   }
 
   //9. Dado un número entero obtener su factorial.
-  public static void exercise9() {
+  public static int exercise9(int number) {
     int factorial = 1;
-    System.out.println(
-            "Determinar el factorial de un número.\n" +
-            "Digita el número:"
-    );
-    int number = in.nextInt();
-    int accededNumber = number;
-    while(number != 0) {
-      factorial *= number;
-      number --;
+    for (int i = 2; i < number; i++){
+      factorial *= i;
     }
-    System.out.println("El factorial de " + accededNumber + " es " + factorial);
+    //System.out.println("El factorial de " + number + " es " + factorial);
+    return factorial;
   }
 
   //10. Crear un programa el cual nos permita conocer el valor de la constante e.
+  public static void exercise10(int number){
+    double e = 0, term;
+    for (int i = 0; i < number; i++) {
+      term = (double) 1 / exercise9(i);
+      e += term;
+    }
+    System.out.println(e);
+  }
 }
