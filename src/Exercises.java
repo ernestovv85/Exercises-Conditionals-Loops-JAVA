@@ -35,6 +35,11 @@ public class Exercises {
   }
 
   //3. Imprimir en consola la tabla de multiplicar del número 9.
+  public static void exercise3() {
+    for(int i= 0; i <= 10; i++) {
+      System.out.println("9 X " + i + " = " + 9 * i);
+    }
+  }
 
   //4. Replicar la siguiente salida en consola.
   //*
