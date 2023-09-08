@@ -7,7 +7,7 @@ public class Exercises {
   private static final Scanner in = new Scanner(System.in);
   //1. Mostrar en consola el mensaje de "Aprobado" en caso la calificación de un alumno sea mayor igual a 70.
   //En caso contrario mostrar el mensaje "Reprobado".
-  public static void excercise1() {
+  public static void exercise1() {
     System.out.println("La calificación debe ser ingresada en decenas.\n" +
             "Por ejemplo: 50, 70, 85, 94, etc.");
     System.out.println("Digite la calificación:");
@@ -66,6 +66,18 @@ public class Exercises {
   //  *******
   // *********
   //Ayuda: Podrás apoyarte de ciclos anidados así como de los métodos println y print
+  public static void exercise5() {
+    int filas = 5;
+    for (int i = 1; i <= filas; i++){
+      for (int j = 1; j<= filas-i; j++) {
+        System.out.print(" ");
+      }
+      for (int k = 1; k<= 2*i-1; k++){
+        System.out.print("*");
+      }
+      System.out.println();
+    }
+  }
 
   //6. Imprimir en consola los primero diez números de la serie Fibonacci.
 
