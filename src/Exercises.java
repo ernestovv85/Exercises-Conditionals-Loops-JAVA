@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 public class Exercises {
@@ -16,8 +19,20 @@ public class Exercises {
     }
   }
 
-  //2. Dado 3 números enteros, mostrar en consola los números de forma ascendente, de menor a mayor.
+  //2. Dados 3 números enteros, mostrar en consola los números de forma ascendente, de menor a mayor.
   //Ejemplo Números = 9, 50, 4 Salida = 4, 9, 50
+  public static void exercise2() {
+    int[] numbers = new int[3];
+    numbers[0] = 9;
+    numbers[1] = 50;
+    numbers[2] = 4;
+    Arrays.sort(numbers);
+    List<Integer> sorted = new ArrayList<>();
+    for (int num: numbers){
+      sorted.add(num);
+    }
+    System.out.println(sorted);
+  }
 
   //3. Imprimir en consola la tabla de multiplicar del número 9.
 
