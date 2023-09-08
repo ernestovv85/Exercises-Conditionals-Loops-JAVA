@@ -49,6 +49,16 @@ public class Exercises {
   //*****
   //******
 
+  public static void exercise4() {
+    int filas =6;
+    for (int i = 1; i <= filas; i++){
+      for (int j= 1; j <= i; j++){
+        System.out.print("*");
+      }
+      System.out.println();
+    }
+  }
+
   //5. Replicar la siguiente salida en consola.
   //     *
   //    ***
