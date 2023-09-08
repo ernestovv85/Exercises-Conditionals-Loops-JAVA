@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Exercises {
   private static final Scanner in = new Scanner(System.in);
+
   //1. Mostrar en consola el mensaje de "Aprobado" en caso la calificación de un alumno sea mayor igual a 70.
   //En caso contrario mostrar el mensaje "Reprobado".
   public static void exercise1() {
@@ -28,7 +29,7 @@ public class Exercises {
     numbers[2] = 4;
     Arrays.sort(numbers);
     List<Integer> sorted = new ArrayList<>();
-    for (int num: numbers){
+    for (int num : numbers) {
       sorted.add(num);
     }
     System.out.println(sorted);
@@ -36,7 +37,7 @@ public class Exercises {
 
   //3. Imprimir en consola la tabla de multiplicar del número 9.
   public static void exercise3() {
-    for(int i= 0; i <= 10; i++) {
+    for (int i = 0; i <= 10; i++) {
       System.out.println("9 X " + i + " = " + 9 * i);
     }
   }
@@ -50,9 +51,9 @@ public class Exercises {
   //******
 
   public static void exercise4() {
-    int filas =6;
-    for (int i = 1; i <= filas; i++){
-      for (int j= 1; j <= i; j++){
+    int filas = 6;
+    for (int i = 1; i <= filas; i++) {
+      for (int j = 1; j <= i; j++) {
         System.out.print("*");
       }
       System.out.println();
@@ -68,11 +69,11 @@ public class Exercises {
   //Ayuda: Podrás apoyarte de ciclos anidados así como de los métodos println y print
   public static void exercise5() {
     int filas = 5;
-    for (int i = 1; i <= filas; i++){
-      for (int j = 1; j<= filas-i; j++) {
+    for (int i = 1; i <= filas; i++) {
+      for (int j = 1; j <= filas - i; j++) {
         System.out.print(" ");
       }
-      for (int k = 1; k<= 2*i-1; k++){
+      for (int k = 1; k <= 2 * i - 1; k++) {
         System.out.print("*");
       }
       System.out.println();
@@ -80,6 +81,15 @@ public class Exercises {
   }
 
   //6. Imprimir en consola los primero diez números de la serie Fibonacci.
+  public static void exercise6() {
+    int a = 0, b = 1, c, n = 10;
+    for (int i = 0; i < n; i++){
+      c = a + b;
+      a = b;
+      b = c;
+      System.out.println(a);
+    }
+  }
 
   //7. Dado un número saber si este es primo o no.
 
