@@ -113,6 +113,13 @@ public class Exercises {
 
   //8. Imprimir en consola todos los números múltiplos de 2.
   // El ciclo finalizará cuando el último múltiplo sea menor a 4570
+  public static void exercise8() {
+    for (int i = 1; i < 4570; i++) {
+      if ( i % 2 == 0) {
+        System.out.println(i);
+      }
+    }
+  }
 
   //9. Dado un número entero obtener su factorial.
 
