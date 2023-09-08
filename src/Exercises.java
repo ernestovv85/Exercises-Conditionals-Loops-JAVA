@@ -51,8 +51,8 @@ public class Exercises {
   //******
 
   public static void exercise4() {
-    int filas = 6;
-    for (int i = 1; i <= filas; i++) {
+    int rows = 6;
+    for (int i = 1; i <= rows; i++) {
       for (int j = 1; j <= i; j++) {
         System.out.print("*");
       }
@@ -68,9 +68,9 @@ public class Exercises {
   // *********
   //Ayuda: Podrás apoyarte de ciclos anidados así como de los métodos println y print
   public static void exercise5() {
-    int filas = 5;
-    for (int i = 1; i <= filas; i++) {
-      for (int j = 1; j <= filas - i; j++) {
+    int rows = 5;
+    for (int i = 1; i <= rows; i++) {
+      for (int j = 1; j <= rows - i; j++) {
         System.out.print(" ");
       }
       for (int k = 1; k <= 2 * i - 1; k++) {
@@ -82,8 +82,8 @@ public class Exercises {
 
   //6. Imprimir en consola los primero diez números de la serie Fibonacci.
   public static void exercise6() {
-    int a = 0, b = 1, c, n = 10;
-    for (int i = 0; i < n; i++){
+    int a = 0, b = 1, c, number = 10;
+    for (int i = 0; i < number; i++){
       c = a + b;
       a = b;
       b = c;
@@ -92,8 +92,27 @@ public class Exercises {
   }
 
   //7. Dado un número saber si este es primo o no.
+  public static void exercise7() {
+    System.out.println(
+            "Validar si el número es primo.\n" +
+            "Digita el número:"
+    );
+    int number = in.nextInt(), sum = 0;
+    for (int i = 1; i < number; i++){
+      int aux = number % i;
+      if (aux == 0) {
+        sum += 1;
+      }
+    }
+    if (sum <= 2) {
+      System.out.println("El número " + number + " es primo");
+    }else {
+      System.out.println("El número " + number + " no es primo");
+    }
+  }
 
-  //8. Imprimir en consola todos los números múltiplos de 2. El ciclo finalizará cuando el último múltiplo sea menor a 4570
+  //8. Imprimir en consola todos los números múltiplos de 2.
+  // El ciclo finalizará cuando el último múltiplo sea menor a 4570
 
   //9. Dado un número entero obtener su factorial.
 
